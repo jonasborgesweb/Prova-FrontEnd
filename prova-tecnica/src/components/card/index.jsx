@@ -1,6 +1,13 @@
 import React from 'react'
 import './card.css'
 
+//Importando os Icones
+import iconUsername from '../../icons/user.svg'
+import iconEmail from '../../icons/email.svg'
+import iconAddress from '../../icons/address.svg'
+import iconSite from '../../icons/internet.svg'
+import iconPhone from '../../icons/phone.svg'
+
 const Card = (props) => {
 
     const {card} = props;
