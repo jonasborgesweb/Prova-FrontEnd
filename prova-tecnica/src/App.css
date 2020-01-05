@@ -19,6 +19,7 @@
 .list__wrapper{
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .list__content{
@@ -34,6 +35,87 @@
   .sidebar{display: none;}
 }
 
+.sidebar__lista{
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.sidebar__radio{
+  display: none;
+}
+
+.sidebar__label{
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  border: 1px solid var(--color-blue);
+  background-color: transparent;
+  outline: 0;
+  font-size: 1.6rem;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s ease;
+  text-align: center;
+}
+.sidebar__label:hover{
+  border: 1px solid var(--color-pink);
+  background-color: var(--color-pink);
+  color: var(--color-white);
+}
+.sidebar__radio:checked ~ .sidebar__label{
+  border: 1px solid var(--color-pink);
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.sidebar__item:not(:last-child){
+  margin-bottom: .5rem;
+}
+
+.sidebar__title{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-pink);
+  text-align: center;
+}
+
 .search{
   padding: 4rem 0;
+}
+
+.search__title{
+  font-size: 2.8rem;
+  font-weight: 600;
+  color:var(--color-pink);
+  text-align: center;
+}
+
+.search__description{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-blue);
+  text-align: center;
+  margin: 1rem 0 3rem;
+}
+
+.search__select{
+  box-sizing: border-box;
+  outline: 0;
+  margin: 1rem auto;
+  display: block;
+  border: 1px solid #ccc;
+  width: 80%;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+  .search__select{
+      width: 100%;
+  }
 }
