@@ -24,9 +24,22 @@ class App extends Component{
   render(){
     let itens = this.state.ListData;
     return(
-      <div>
-        {itens.map((item, index) => <Card key={index} card={item} />)}
-      </div>
+      <section className="list">
+        <div className="center">
+          <div className="search">
+            <p className="search__title">Aqui vai a Pesquisa</p>
+          </div>
+          <div className="list__wrapper">
+            <aside className="sidebar">
+              <p>Aqui é a Sidebar</p>
+            </aside>
+            <div className="list__content">
+              {itens.map((item, index) => <Card key={index} card={item} />)}
+            </div>
+          </div>
+        </div>
+      </section>
+      
     );
   }
 }
