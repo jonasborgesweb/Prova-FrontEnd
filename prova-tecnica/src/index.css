@@ -37,3 +37,53 @@ main{
   width: 94%;
   margin: 0 auto;
 }
+
+.header{
+  background-color: var(--color-blue);
+  padding: 2rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: var(--z-index-menu);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.header__logo{
+  width: 150px;
+}
+
+.footer{
+  padding: 2rem 0;
+  background-color:var(--color-blue);
+}
+
+.footer__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width:600px){
+  .footer__content{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.footer__logo{
+  width: 150px;
+}
+
+.footer__texto{
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width:600px){
+  .footer__texto{
+    flex: 0 0 100%;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}
