@@ -15,7 +15,7 @@ O que você precisa para instalar o projeto
 
 ## Instalação
 
-Após clonar o projeto siga e instalar o NodeJS e o Yarn, siga os passos abaixo:
+Após clonar o projeto siga e instalar o NodeJS, siga os passos abaixo:
 
 - Acessar a pasta prova-tecnica
 
@@ -23,7 +23,12 @@ Após clonar o projeto siga e instalar o NodeJS e o Yarn, siga os passos abaixo:
 cd prova-tecnica
 ```
 
-- Dentro da prova tecnica, execute o Yarn para inicializar o projeto
+- Dentro da prova tecnica, execute o comando para instalar o Yarn
+
+```
+yarn install
+```
+- Após finalizar a instalação, execute o comando para inicializar o projeto
 
 ```
 yarn start
